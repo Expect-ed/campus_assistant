@@ -17,7 +17,7 @@
 * `map.jpg`：二工大校园平面图，在对话触发空间逻辑时被程序唤醒。
 * `requirements.txt`：项目的Python环境依赖库清单。
 
-## 🚀 队友本地协同指南
+## 🚀 本地协同指南
 
 git clone https://github.com/你的用户名/campus_assistant.git
 

@@ -13,7 +13,7 @@ def load_knowledge():
 school_info = load_knowledge()
 
 st.set_page_config(page_title="二工大校园百事通", page_icon="🏫")
-st.title("二工大校园百事通 - 你的智能生活助理")
+st.title("🏫二工大校园百事通 - 你的智能生活助理")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -54,4 +54,5 @@ if prompt := st.chat_input("请输入你想咨询的校园问题..."):
     with st.chat_message("assistant"):
         st.markdown(msg)
         if is_map_requested and os.path.exists("map.jpg"):
+
             st.image("map.jpg", caption="二工大校园平面图")

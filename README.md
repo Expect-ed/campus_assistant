@@ -20,6 +20,7 @@
 ## 🚀 队友本地协同指南
 
 git clone https://github.com/你的用户名/campus_assistant.git
+
 cd campus_assistant
 
 pip install -r requirements.txt

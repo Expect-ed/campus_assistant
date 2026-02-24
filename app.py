@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 import os
 
-client = OpenAI(api_key="sk-OuGXL1UsKRqW0J23aWFqKhWQL9lS1m79cSctpkrHt684yMuJ", base_url="https://ai.opendoor.cn/v1")
+client = OpenAI(api_key=st.secrets["API_KEY"], base_url="https://ai.opendoor.cn/v1")
 
 def load_knowledge():
     if os.path.exists("campus_data.txt"):
@@ -54,5 +54,4 @@ if prompt := st.chat_input("请输入你想咨询的校园问题..."):
     with st.chat_message("assistant"):
         st.markdown(msg)
         if is_map_requested and os.path.exists("map.jpg"):
-
             st.image("map.jpg", caption="二工大校园平面图")
